@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习</title>
+</head>
+<body>
+<canvas id="myCanvas" width="350" height="350">
+    您的浏览器不支持canvas！
+</canvas>
+<script src="src/js/seajs/sea.js"></script>
+<script>
+    seajs.config({
+        //设置路径
+        paths: {
+            'basejs': './src/js'
+        },
+        // 设置别名，方便调用
+        alias: {
+            'jquery': 'jquery-seajs-2.1.4.min.js'
+        }
+
+    });
+</script>
+<script>
+    // 加载一个模块，在加载完成时，执行回调
+    seajs.use('basejs/sea-module/canvas', function(canvas) {
+        $("#myCanvas").circle(55);
+    });
+</script>
+</body>
+</html>
