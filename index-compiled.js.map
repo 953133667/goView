@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":[],"mappings":"AAAA;;;AAGA,QAAQ,GAAR,CAAY,eAAZ","file":"index-compiled.js","sourcesContent":["/**\r\n * Created by Dehua.Ke on 2016/7/25.\r\n */\r\nconsole.log(\"hello webpack\");"]}

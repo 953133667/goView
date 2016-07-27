@@ -97,10 +97,17 @@ br <br>
 <script>
     //document ready
     $(function () {
+        //返回顶部的实现
         $("#j-go-view").on("click",function () {
             $("html").goView({
-                "offsetY": 0, //当前元素 Y 轴偏移多少
-                "speed": 800  //动画执行的时长
+                "offsetY": 0, //当前元素 Y 轴偏移多少 px
+                "speed": 800,  //动画执行的时长
+                "before": function () {
+                    console.log("Start");
+                }, //前置函数
+                "success": function () {
+                    console.log("OK!");
+                } //回调函数
             });
         });
     });

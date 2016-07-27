@@ -44,6 +44,24 @@ define(function (require, exports, module) {
 
     /**
      *  描述：
+     *    往canvas 中画图片
+     * @param percent
+     */
+    $.fn.drawImg = function (percent) {
+        //必须是数字，否则抛错误
+        if (typeof percent !== 'number') {
+            throw new error("arguments are not numbers");
+        }
+        var canvas = $(this)[0];
+        var ctx = canvas.getContext('2d');
+
+        var img = new Image();
+        img.src = "image.png";
+        ctx.drawImage(img, 0, 0); // 设置对应的图像对象，以及它在画布上的位置
+    }
+
+    /**
+     *  描述：
      *    百分比转数字，然后把结果乘以二
      * @param percent
      */
@@ -60,9 +78,13 @@ define(function (require, exports, module) {
         return num;
     }
 
+
+
     //测试一下 percent2N2X
     exports.percent2N2X = function (percent) {
         console.log(percent2N2X(percent));
     };
+
+    exports.drawImg = drawImg;
 
 });
