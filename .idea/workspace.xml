@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89b38361-0ca8-4bd1-b319-8d3a80f077a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goViewDemo.html" afterPath="$PROJECT_DIR$/goViewDemo.html" />
     </list>
     <ignored path="student.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +26,8 @@
       <file leaf-file-name="goViewDemo.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goViewDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+            <state relative-caret-position="98">
+              <caret line="103" column="48" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -424,15 +422,15 @@
       <workItem from="1469512656754" duration="6341000" />
       <workItem from="1469587808831" duration="7373000" />
       <workItem from="1469603090928" duration="1299000" />
-      <workItem from="1469675395958" duration="10663000" />
+      <workItem from="1469675395958" duration="10751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89481000" />
+    <option name="totallyTimeSpent" value="89569000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.3664865" order="2" side_tool="true" content_ui="tabs" />
@@ -713,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/goViewDemo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
+        <state relative-caret-position="98">
+          <caret line="103" column="48" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="48" />
           <folding />
         </state>
       </provider>

@@ -20,8 +20,9 @@
 
 ###参数（Options）
 ***
-    //document ready
-    $("#test").goView({
+    //绑定事件
+	$("#j-go-view").on("click",function () {
+		$("#test").goView({
                 "offsetY": -10, //当前元素 Y 轴偏移多少 px
                 "speed": 800,  //动画执行的时长，单位毫秒 （ms）
                 "before": function () {
@@ -30,13 +31,16 @@
                 "success": function () {
                     console.log("OK!");
                 } //回调函数，在该插件执行之后执行
-    });
+    	});
+
+	});
+    
 
 
 #### 实现返回顶部（Go top）
 ***
     //document ready
-    $("html").goView({
+		$("html").goView({
                 "offsetY": 0, //当前元素 Y 轴偏移多少 px
                 "speed": 800,  //动画执行的时长，单位毫秒 （ms）
                 "before": function () {
@@ -45,7 +49,8 @@
                 "success": function () {
                     console.log("OK!");
                 } //回调函数，在该插件执行之后执行
-    });
+    	});
+    
 
 ###代码示例（Demo）
 ***
