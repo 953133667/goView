@@ -18,29 +18,33 @@
             "speed": 800  //动画执行的时长
         }, options || {});
 
-        var self = this; //得到当前对象
+        //得到当前对象
+        var $this = this;
 
         //请求开关, true可请求, false不可 防止重复执行
         if (!_mark) {
-            return self;
+            return $this;
         }
         _mark = false;
 
         //执行前置函数
         options.before();
 
-        //得到 this 对象
-        var $this = $(this);
-
         //得到 Y 轴坐标，然后加上偏移数值
         var scrollTo = $this.offset().top + options.offsetY;
 
+        //回调只能执行一次
+        var callNum = 0;
         //开始动画 //执行回调函数
-        $("body").animate({"scrollTop": scrollTo}, options.speed, function () {
-            options.success();
+        $("html,body").animate({scrollTop: scrollTo}, options.speed, function () {
+            if(callNum <1){
+                options.success();
+                callNum ++;
+            }
 
             _mark = true;
-            return self;
         });
+
+        return $this;
     }
 })(jQuery);

@@ -17,6 +17,7 @@
 br <br>
 br <br>
 br <br>
+<div id="test">fsdfsdfd</div>
 br <br>
 br <br>
 br <br>
@@ -99,8 +100,8 @@ br <br>
     $(function () {
         //返回顶部的实现
         $("#j-go-view").on("click",function () {
-            $("html").goView({
-                "offsetY": 0, //当前元素 Y 轴偏移多少 px
+            $("#test").goView({
+                "offsetY": -10, //当前元素 Y 轴偏移多少 px
                 "speed": 800,  //动画执行的时长
                 "before": function () {
                     console.log("Start");
