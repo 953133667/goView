@@ -12,7 +12,7 @@
 >`<!--必须的库文件-->`
 >
 >
->`<script src="/javascripts/ajaxpage/ajaxpage.js"></script>`
+>`<script src="/src/js/plugins/goView.js"></script>`
 >
 
 
